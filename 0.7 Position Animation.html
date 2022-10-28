@@ -4,13 +4,14 @@
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene embedded arjs='sourceType: webcam;'>
 		<a-box position='0 0.5 0' material='opacity: 0.5;'>
-      <a-animation attribute="position"
-        dur="3000"
-        from="-5 0 0"
-        to="5 0 0"
-        repeat="indefinite">
-      </a-animation>
-    </a-box>
-    <a-sky color="blue"></a-sky>
+		      <a-animation attribute="position"
+			dur="3000"
+			from="-5 0 0"
+			to="5 0 0"
+			repeat="indefinite">
+		      </a-animation>
+		</a-box>
+    		<a-sky color="blue"></a-sky>
 	</a-scene>
+	<a-marker-camera preset='hiro'></a-marker-camera>
 </body>
