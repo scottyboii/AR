@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(44, 48, 52);
+    background-color: #1C1E21;
 }
 input[type='checkbox'] {
     display: none;
@@ -17,14 +17,14 @@ input[type='checkbox'] {
     text-transform: uppercase;
     text-align: center;
     padding: 1rem;
-    color: #000;
-    background: darkslategray;
+    color: #B986FE;
+    background: #282D30;
     cursor: pointer;
     border-radius: 7px;
     transition: all 0.25s ease-out;
 }
 .lbl-toggle:hover {
-    color: #FFF;
+    background-color: #3B4347;
 }
 .lbl-toggle::before {
     content: ' ';
@@ -44,7 +44,7 @@ input[type='checkbox'] {
     max-height: 0px;
     overflow: hidden;
     transition: max-height .25s ease-in-out;
-    background-color: rgb(69, 117, 117);
+    background-color: #2A2F33;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
 }
@@ -65,6 +65,7 @@ input[type='checkbox'] {
 }
 .collapsible-content p, .animation-collapsible-content p, .image-collapsible-content p, .final-collapsible-content p {
     margin-bottom: 0;
+    color: #A7A8A8;
 }
 
 .flex-container {
@@ -84,7 +85,8 @@ input[type='checkbox'] {
 #header {
     height: 50px;
     width: 100%;
-    background-color: rgb(56, 50, 58);
+    background-color: #222528;
+    color: #B986FE;
 }
 
 #header p {
