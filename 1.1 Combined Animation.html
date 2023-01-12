@@ -1,10 +1,13 @@
 <!--Combined Animation-->
+<!--Import Scripts-->
 <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
 	<a-scene>
+		<!--Make a box with 3 different animations, colour, scale, and position-->
 		<a-box position="-1 0 -4" radius="0.5" color="tomato" animation="property: position; to: 1 8 -10; dur: 2000; easing: linear; loop: true" animation__2="property: rotation; to: 0 360 0; dur: 2000; easing: linear; loop: true" animation__3="property: components.material.material.color;type: color;to: blue;dur: 2000;dir: alternate;loop: true"></a-box>
-    		<a-sky color="yellow"></a-sky>
+    		<!--Make the sky yellow-->
+		<a-sky color="yellow"></a-sky>
 	</a-scene>
 	<a-camera position='0 10 3' user-height='0'></a-camera>
 </body>
