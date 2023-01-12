@@ -1,20 +1,25 @@
 <html>
 	<head>
+		<!--Import scripts-->
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
 		<script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.5/dist/mindar-image.prod.js"></script>
 		<script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.1.5/dist/mindar-image-aframe.prod.js"></script>
 	</head>
 	<body>
+		<!--Set the scene, including MindAR targets-->
 		<a-scene mindar-image="imageTargetSrc: ./targetsqr.mind;" filterMinCF:0.0001; filterBeta: 0.001; vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights">
+			<!--Import both 3D models-->
 			<a-assets>
 		    		<a-asset-item id="MiAmigo" src="./MiAmigoW.glb"></a-asset-item>
 				<a-asset-item id="Cholera" src="./CholeraW.glb"></a-asset-item>
 			</a-assets>
 			<a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+			<!--Display the MiAmigo sign on the plane marker-->
 			<a-entity mindar-image-target="targetIndex: 1">
 				<a-gltf-model rotation="0 270 0" position="0 -1.25 0.1" scale="0.5 0.5 0.5" src="#MiAmigo">
 			</a-entity>
+			<!--Display the cholera sign on the monument marker-->
 			<a-entity mindar-image-target="targetIndex: 0">
 				<a-gltf-model rotation="0 270 0 " position="0 -1.25 0.1" scale="0.5 0.5 0.5" src="#Cholera">
 			</a-entity>
