@@ -1,12 +1,15 @@
 <!--AR in 10 lines of code-->
+<!--Import Scripts-->
 <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
 <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 <body style='margin : 0px; overflow: hidden;'>
+	<!--Register the image in assets-->
 	<a-assets>
 		<img id="test-image" src="testimage.png">
 	</a-assets>
 	<a-scene embedded arjs='sourceType: webcam;'>
+		<!--Use the image from assets to display-->
 		<a-image src="#test-image" rotation="-90 0 0" material="" geometry=""></a-image>
 		<a-marker-camera preset='hiro'></a-marker-camera>
 	</a-scene>
